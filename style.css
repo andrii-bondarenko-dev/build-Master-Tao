@@ -1,0 +1,129 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "ProximaNova";
+  background-color: #282B38;
+  color: #fff;
+  font-size: 16px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 15px;
+  border-radius: 90px;
+  background-color: #E58D35;
+  color: #fff;
+  border-color: #E58D35;
+  padding: 12px 27px;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #E58D35;
+}
+.btn.btn-s {
+  padding: 12px 18px;
+}
+.btn.btn-l {
+  font-size: 16px;
+  padding: 19px 21px 19px 33px;
+}
+.btn.btn-l img {
+  margin-left: 48px;
+}
+.btn.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #E58D35;
+}
+.btn.btn-secondary:hover {
+  background-color: #E58D35;
+}
+
+.navbar-nav.w-100.justify-content-between.mx-auto {
+  max-width: 650px;
+}
+
+.navbar-nav.w-100.justify-content-between.mx-auto .nav-link {
+  padding: 10px 8px;
+}
+
+.navbar {
+  padding: 37px 0 27px;
+}
+
+.navbar-nav {
+  max-width: 818px;
+}
+
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #E58D35;
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar-nav {
+    max-width: 540px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
