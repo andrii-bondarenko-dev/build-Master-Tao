@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <title>MasterTao</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
@@ -17,11 +19,16 @@
     <header>
         <nav class="navbar navbar-expand-lg margin">
             <div class="container">
-                <a class="logo" href="#">
-				<img src="./assets/img/logo.svg" alt="logo" />
+                <a class="logo" href="index.html">
+				<picture>
+					<source media="(min-width:992px)" srcset="./assets/img/logo.svg" >
+					<img src="./assets/img/logo-mobile.svg" class="img-fluid" alt="logo" />
+				  </picture>
 			</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler hamburger hamburger--vortex" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 justify-content-between mx-auto">
@@ -46,30 +53,81 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <a href="#" class="btn btn-primary">Залишити заявку</a>
-        <a href="#" class="btn btn-primary btn-s">Залишити заявку</a>
-        <a href="#" class="btn btn-primary btn-l"
+    <!-- 
+<div class="container">
+	<a href="#" class="btn btn-primary">Залишити заявку</a>
+	<a href="#" class="btn btn-primary btn-s">Залишити заявку</a>
+	<a href="#" class="btn btn-primary btn-l"
 		>Залишити заявку
 		<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
 	/></a>
-        <a href="#" class="btn btn-secondary">Докладніше</a>
-    </div>
-
+	<a href="#" class="btn btn-secondary">Докладніше</a>
+</div>
+-->
     <main class="wrapper home">
-        <div class="container">
-            <h3 class="fw-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquam.</h3>
-            <h3 class="fw-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, earum.</h3>
-            <h3 class="fw-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, harum.</h3>
-            <h3 class="fw-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, pariatur.</h3>
-        </div>
+        <section class="swiper swiper-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-1.png)">
+                    <div class="container">
+                        <h1 class="banner-tittle">Пряме КАРГО з Китаю</h1>
+                        <h5 class="banner-description">
+					Транспортуємо будь-які вантажі з Китаю за чесною ціною
+				</h5>
+                        <a href="#" class="btn btn-primary btn-l"
+					>Розрахувати вартість
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-2.png)">
+                    <div class="container">
+                        <h2 class="banner-tittle">Пряме КАРГО з Китаю</h2>
+                        <h5 class="banner-description">
+					Транспортуємо будь-які вантажі з Китаю за чесною ціною
+				</h5>
+                        <a href="#" class="btn btn-primary btn-l"
+					>Розрахувати вартість
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-3.png)">
+                    <div class="container">
+                        <h2 class="banner-tittle">Пряме КАРГО з Китаю</h2>
+                        <h5 class="banner-description">
+					Транспортуємо будь-які вантажі з Китаю за чесною ціною
+				</h5>
+                        <a href="#" class="btn btn-primary btn-l"
+					>Розрахувати вартість
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-4.png)">
+                    <div class="container">
+                        <h2 class="banner-tittle">Пряме КАРГО з Китаю</h2>
+                        <h5 class="banner-description">
+					Транспортуємо будь-які вантажі з Китаю за чесною ціною
+				</h5>
+                        <a href="#" class="btn btn-primary btn-l"
+					>Розрахувати вартість
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
     </main>
     <footer>
         Footer
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
-
 </body>
 
 </html>
