@@ -169,7 +169,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
 }
 .swiper-banner .swiper-slide .container {
   padding-top: 163px;
@@ -188,6 +187,32 @@ body {
 .swiper-banner .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-banner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+.swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: calc(100% - 59px);
+}
+.swiper-banner .swiper-banner-arrow {
+  --padding:36px;
+  height: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 var(--padding);
+  max-width: calc(1522px + var(--padding) * 2);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-banner .swiper-button-next, .swiper-banner .swiper-button-prev {
+  color: #fff;
+  position: static;
+  margin-top: 0;
+}
+.swiper-banner .swiper-button-next:hover, .swiper-banner .swiper-button-prev:hover {
+  color: #89C249;
 }
 
 .banner-tittle {
@@ -208,12 +233,25 @@ body {
   line-height: 1.35;
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 992px) {
+  .swiper-banner .swiper-slide {
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 1399.99px) {
+  .navbar-nav {
+    max-width: 540px;
+  }
+  .swiper-banner .swiper-slide .container {
+    padding: 163px 72px 73px;
+  }
+}
+@media screen and (max-width: 1199.99px) {
   .navbar-nav {
     max-width: 540px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991.99px) {
   .logo {
     max-width: 126px;
   }
@@ -240,6 +278,35 @@ body {
   .nav-link {
     font-size: 24px;
     line-height: 222%;
+  }
+  .swiper-banner .swiper-slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - var(--header-height));
+  }
+  .swiper-banner .swiper-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(4, 9, 17, 0.6);
+    z-index: -1;
+  }
+  .swiper-banner .swiper-slide .container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-tittle {
+    font-size: 36px;
+  }
+  .banner-description {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
