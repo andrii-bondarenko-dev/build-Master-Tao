@@ -51,6 +51,45 @@ body {
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  line-height: 1.26;
+  font-size: 56px;
+}
+
+h2 {
+  line-height: 1.245;
+  font-size: 36px;
+}
+
+h3 {
+  line-height: 1.245;
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.355;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.245;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 1.26;
+}
+
 .fw-300 {
   font-weight: 300;
 }
@@ -130,6 +169,47 @@ body {
   bottom: 2px;
 }
 
+.template-title {
+  text-align: center;
+  position: relative;
+  padding-bottom: 70px;
+}
+.template-title h2 {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.template-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 54px;
+  left: 50%;
+  width: 85px;
+  height: 2px;
+  background-color: #e58d35;
+  transform: translateX(-50%);
+}
+.template-title h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.template-title.template-title-case-2 {
+  text-align: left;
+}
+.template-title.template-title-case-2 h2:after {
+  left: 0;
+  transform: none;
+}
+.template-title.template-title-case-3 {
+  max-width: 626px;
+  text-align: left;
+}
+.template-title.template-title-case-3 h2:after {
+  display: inline-block;
+  position: static;
+  transform: none;
+  margin: 0 0 8px 20px;
+}
+
 .logo {
   max-width: 172px;
 }
@@ -139,7 +219,8 @@ body {
 }
 
 .navbar-nav {
-  max-width: 818px;
+  max-width: 619px;
+  padding: 5px 0 0 0;
 }
 
 .nav-link {
@@ -160,7 +241,6 @@ body {
 }
 
 .swiper-banner {
-  width: 100%;
   max-width: 1820px;
 }
 .swiper-banner .swiper-slide {
@@ -234,6 +314,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  .swiper-banner {
+    width: calc(100% - 24px);
+  }
   .swiper-banner .swiper-slide {
     border-radius: 20px;
   }
