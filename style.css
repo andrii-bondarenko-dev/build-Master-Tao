@@ -51,6 +51,10 @@ body {
   font-size: 16px;
 }
 
+section {
+  margin-bottom: 100px;
+}
+
 h1,
 h2,
 h3,
@@ -313,6 +317,78 @@ h6 {
   line-height: 1.35;
 }
 
+.calculation-form {
+  max-width: 626px;
+  background: #363A4D;
+  border-radius: 20px;
+  padding: 50px 50px 60px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin-bottom: 34px;
+}
+.form-row:last-of-type {
+  margin-bottom: 24px;
+}
+
+.form-column {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-box_checkbox {
+  padding-left: 45px;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label:hover {
+  color: #E58D35;
+}
+input[type=checkbox] + label:hover::before {
+  border-color: #E58D35;
+}
+
+input[type=checkbox] + label::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #282B38;
+  border-radius: 4px;
+}
+
+input[type=checkbox]:checked + label::before {
+  content: "";
+  background: url(./assets/img/checked.svg) center no-repeat #fff;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
@@ -334,7 +410,7 @@ h6 {
     max-width: 540px;
   }
 }
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .logo {
     max-width: 126px;
   }
