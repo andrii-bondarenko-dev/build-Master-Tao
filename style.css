@@ -397,6 +397,60 @@ input[type=checkbox]:checked + label::before {
   background-color: #e58d35;
 }
 
+.template-carousel {
+  position: relative;
+}
+.template-carousel .card {
+  margin: 0 auto;
+}
+.template-carousel .swiper-pagination {
+  position: static;
+  margin-top: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  opacity: 1;
+  background-color: transparent;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  position: static;
+  margin-top: 0;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #89c249;
+}
+
+.swiper-arrow-container {
+  --padding: 20px;
+  height: 0px;
+  position: absolute;
+  top: calc(50% - 23px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 var(--padding);
+  max-width: calc(1522px + var(--padding) * 2);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 183px);
+}
+
 .logo {
   max-width: 172px;
 }
@@ -449,22 +503,12 @@ input[type=checkbox]:checked + label::before {
   top: calc(50% - 23px);
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
   padding: 0 var(--padding);
   max-width: calc(1522px + var(--padding) * 2);
   z-index: 1;
   display: flex;
   justify-content: space-between;
-}
-.swiper-banner .swiper-button-next,
-.swiper-banner .swiper-button-prev {
-  color: #fff;
-  position: static;
-  margin-top: 0;
-}
-.swiper-banner .swiper-button-next:hover,
-.swiper-banner .swiper-button-prev:hover {
-  color: #89c249;
+  width: 100%;
 }
 .swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -487,23 +531,6 @@ input[type=checkbox]:checked + label::before {
   font-weight: 300;
   margin-bottom: 37px;
   line-height: 1.35;
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border: 2px solid #fff;
-  opacity: 1;
-  background-color: transparent;
-  cursor: pointer;
-}
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
 }
 
 .calculation .template-title {
@@ -570,7 +597,6 @@ input[type=checkbox]:checked + label::before {
   background-color: #363a4d;
   border-radius: 20px;
   width: 360px;
-  height: 482px;
   border: none;
 }
 .card__img-box {
@@ -583,6 +609,7 @@ input[type=checkbox]:checked + label::before {
 .card-title {
   font-size: 22px;
   margin-bottom: 12px;
+  text-align: center;
 }
 .card__options-list {
   list-style: none;
@@ -635,6 +662,49 @@ input[type=checkbox]:checked + label::before {
   z-index: 1;
 }
 
+.card_services {
+  min-height: 482px;
+}
+.card_services .card-title {
+  text-align: left;
+}
+
+.about .container {
+  display: flex;
+  gap: 35px;
+}
+.about .about_text {
+  padding: 41px;
+  max-width: 555px;
+}
+.about .about_text__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  color: #fff;
+}
+
+.questions_block {
+  display: flex;
+  gap: 34px;
+}
+.questions_block .questions_block__faq {
+  max-width: 716px;
+}
+.questions_block .questions_block__faq .accordion .accordion-button {
+  border: 1px solid #3a444e;
+  border-radius: 10px;
+  width: 716px;
+  height: 64px;
+  background-color: #3a444e;
+}
+.questions_block .questions_block__faq .accordion-item:last-of-type .accordion-button.collapsed {
+  width: 716px;
+}
+.questions_block .calculation-form {
+  width: 390px;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
@@ -654,6 +724,10 @@ input[type=checkbox]:checked + label::before {
   }
   .swiper-banner .swiper-slide .container {
     padding: 163px 72px 73px;
+  }
+  .template-carousel {
+    margin: 0 auto;
+    max-width: 750px;
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -771,6 +845,10 @@ input[type=checkbox]:checked + label::before {
   .advantage .advantage__title {
     max-width: 218px;
     margin: 0 auto 40px;
+  }
+  .about .container {
+    flex-direction: column;
+    gap: 25px;
   }
 }
 @media screen and (max-width: 767.98px) {
