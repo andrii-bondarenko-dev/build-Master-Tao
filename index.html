@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100 justify-content-between mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Prices and terms</a>
+                        <a class="nav-link" href="#delivery">Prices and terms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About the company</a>
+                        <a class="nav-link" href="#about">About the company</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacts</a>
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#calculation">Form a load</a>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-primary">Leave a request</a>
+                <a href="#calculation" class="btn btn-primary">Leave a request</a>
             </div>
         </div>
     </nav>
@@ -254,7 +254,7 @@
             </div>
         </div>
     </section>
-    <section class="delivery">
+    <section class="delivery" id="delivery">
         <div class="container">
             <div class="template-title">
                 <h2>Options for cargo delivery from USA</h2>
@@ -420,7 +420,7 @@
             </div>
         </div>
     </section>
-    <section class="services bg-accent">
+    <section class="services bg-accent" id="services">
         <div class="container">
             <div class="template-title">
                 <h2>Services</h2>
@@ -503,7 +503,7 @@
                 </div>
             </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about_text">
                 <div class="template-title template-title-case-2">
@@ -520,7 +520,7 @@
                     customers.
                     Choosing us - you choose high-quality delivery that is optimal in price and time! See for yourself!</p>
             </div>
-            <div class="about_img-box"><img src="../assets/img/about-picture.png" alt="about-picture">
+            <div class="about_img-box"><img src="./assets/img/about-picture.png" alt="about-picture picture">
             </div>
 
 
@@ -528,167 +528,129 @@
     </section>
     <section class="questions">
         <div class="container">
+
             <div class="template-title">
                 <h2>Frequently asked questions</h2>
             </div>
-            <div class="questions_block">
-                <div class="questions_block__faq">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                                    plugin adds
-                                    the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well
-                                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+
+            <div class="questions__row">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              How are shipping costs calculated?
+            </button>
+          </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The cost of delivery is calculated based on the weight and dimensions of the parcel, as well as the
+                                carrier's rates and
+                                the selected delivery method.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin
-                                    adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as
-                                    well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                                    overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How is payment for cargo delivery made?
+            </button>
+          </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Payment for delivery is made online after weighing and calculating the cost of the parcel, in a way
+                                convenient for you.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin
-                                    adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as
-                                    well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                                    overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How to track a parcel from the USA?
+            </button>
+          </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Tracking of the parcel is available through your personal account on the website with the tracking number
+                                after the
+                                shipment has been sent.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseFour">
-                Accordion Item #4
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin
-                                    adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as
-                                    well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                                    overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Is it possible to pay for goods to the supplier through you?
+            </button>
+          </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes, we provide such a service, we can take payment for the goods in USA on ourselves. If you do not
+                                have a foreign
+                                currency account, you can pay for the goods in hryvnia to our account.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseFive">
-                Accordion Item #5
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin
-                                    adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as
-                                    well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                                    overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What is special about CARGO delivery from China?
+            </button>
+          </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                CARGO shipping from the USA is a cost-effective way to ship goods wholesale or retail, with a fixed rate
+                                per kg and no
+                                hidden fees.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseSix">
-                Accordion Item #6
-              </button>
-            </h2>
-                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin
-                                    adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as
-                                    well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                                    overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              What is the delivery time from USA?
+            </button>
+          </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Delivery time from the US is usually 7 to 21 days depending on the method and destination.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="questions_block__form">
-                    <form class="calculation-form">
-                        <div class="form-column">
-                            <div class="input-box">
-                                <input id="cargo-cost" type="number" placeholder="Name *" inputmode="numeric" />
-                            </div>
 
-                            <div class="input-box">
-                                <input id="cargo-cost" type="number" placeholder="Telephone *" inputmode="numeric" />
-                            </div>
+                <form class="questions-form">
+                    <h3 class="questions-form__title">Any questions left?</h3>
+                    <h6 class="questions-form__subtitle">Leave a request and our manager will answer you shortly</h6>
 
-                            <div class="input-box">
-                                <input id="cargo-cost" type="number" placeholder="E-mail" inputmode="numeric" />
-                            </div>
+                    <div class="input-box">
+                        <input id="questions-form__name" type="text" placeholder="Name *" inputmode="numeric">
+                    </div>
 
-                            <div class="input-box">
-                                <input id="cargo-cost" type="number" placeholder="Your question" inputmode="numeric" />
-                            </div>
+                    <div class="input-box">
+                        <input id="questions-form__phone" type="number" placeholder="Telephone *" inputmode="numeric">
+                    </div>
 
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-l">Next step
-                            <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left" /></button>
-                </div>
+                    <div class="input-box">
+                        <input id="questions-form__mail" type="text" placeholder="E-mail" inputmode="numeric">
+                    </div>
+
+                    <div class="input-box">
+                        <textarea id="" placeholder="Your question"></textarea>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-l">Send request
+          <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left" /></a>
 
                 </form>
+
             </div>
-        </div>
         </div>
     </section>
 
