@@ -556,6 +556,9 @@ textarea {
 .calculation .container {
   position: relative;
 }
+.calculation .template-title h2::after {
+  background-color: #89c249;
+}
 
 .calculation-form {
   max-width: 626px;
@@ -608,6 +611,10 @@ textarea {
 .advantages .swiper-horizontal > .swiper-pagination-bullets,
 .advantages .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
+}
+
+.delivery .template-title h2::after {
+  background-color: #89c249;
 }
 
 .card {
@@ -686,6 +693,9 @@ textarea {
   text-align: left;
 }
 
+.about .template-title h2::after {
+  background-color: #89c249;
+}
 .about .container {
   display: flex;
   gap: 35px;
@@ -759,6 +769,10 @@ textarea {
 }
 .questions .accordion .accordion-body {
   padding: 22px 34px 34px;
+}
+
+.partnership .template-title h2::after {
+  background-color: #89c249;
 }
 
 .partnership__content {
